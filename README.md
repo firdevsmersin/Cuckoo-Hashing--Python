@@ -13,9 +13,13 @@ The hash table in this particular implementation contains 2 lists, each one usin
 - This project's hash function calculates the ASCII values of the letters in a string and multiplies the ASCII value of each character by its index number. Thus, words consisting of the same letters giving the same ASCII value gives different result. Then, the id of each table is multiplied by the result, which ensures that each table has different hash functions.
 
 Example for HASH FUNCTION:
+
 Table size = 10
-ASCII Values  [a] =97, [e] =101, [s] =115, [y]=121
+
+ASCII Values => [a] =97, [e] =101, [s] =115, [y]=121
+
 Key = “ayse”
+
 Hash Value for Table 1 = [(a*1 + y*2 + s*3 + e*4)*table_ID]%size_of_table 
 [(97*1 + 121*2 + 115*3 + 101*4 )*1]%10 = 973%10 =3
 
