@@ -5,7 +5,7 @@ Python3 Cuckoo Hash Table
 The purpose of this program is to visualize (as console) the cuckoo hashing method using different table sizes, and different number of tables.
 In this program the number of tables (max 5 tables) and the size of tables (min 10 / max 30 cells) will be taken as input from the user. Also, the keys to be inserted, searched, and deleted will be taken from the user. Also the output shows total number of collisions and the load factor of each table after each insertion.
 
- Cuckoo hashing utilizes hash functions as much as size of table in order to minimize collisions.
+- Cuckoo hashing utilizes hash functions as much as size of table in order to minimize collisions.
 
 Example, number of table is 2:
 The hash table in this particular implementation contains 2 lists, each one using a different hash function. When inserting into a cuckoo hash table, hash the key twice to identify 2 possible "nests" (or "buckets") for the key pair. If both of its nests are already occupied, evict the occupant of 1 of the nests and then repeat the insertion step for the evicted occupant.
@@ -17,7 +17,7 @@ Table size = 10
 ASCII Values  [a] =97, [e] =101, [s] =115, [y]=121
 Key = “ayse”
 Hash Value for Table 1 = [(a*1 + y*2 + s*3 + e*4)*table_ID]%size_of_table 
-                         [(97*1 + 121*2 + 115*3 + 101*4 )*1]%10 = 973%10 =3
+[(97*1 + 121*2 + 115*3 + 101*4 )*1]%10 = 973%10 =3
 
 Hash Value for Table 2 = [(97*1 + 121*2 + 115*3 + 101*4 )*2]%10 = 1946%10 =6
 Key = “yase”
