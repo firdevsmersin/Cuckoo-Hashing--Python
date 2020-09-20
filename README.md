@@ -40,10 +40,15 @@ As seen in the example above, the words "ayse" and "yase", which consist of the 
 - Furthermore, an infinite loop may be encountered while cuckoo hashing. This occurs if there are 2 or more items that are continuously displacing one another and are never able to find a permanent position. There is a certain threshold in the code to detect these infinite loops and deal with them. In this project, threshold value equals to number of table.
 
 For example:
+
 Table size = 10
+
 If there is 10 cycle, the program will warn the user for unpositioned key. “Cycle here !!”.
+
 Load factor = number of filled cells / size of table
+
 Collision number = If the position where a key is to be placed as a result of the hash value is full, there is a collision in that table. 
 
 #Running the tests
+
 $python3 cuckoohashing.py 
