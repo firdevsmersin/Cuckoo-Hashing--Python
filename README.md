@@ -21,12 +21,15 @@ ASCII Values => [a] =97, [e] =101, [s] =115, [y]=121
 Key = “ayse”
 
 Hash Value for Table 1 = [(a*1 + y*2 + s*3 + e*4)*table_ID]%size_of_table 
-[(97*1 + 121*2 + 115*3 + 101*4 )*1]%10 = 973%10 =3
+
+                        [(97*1 + 121*2 + 115*3 + 101*4 )*1]%10 = 973%10 =3
 
 Hash Value for Table 2 = [(97*1 + 121*2 + 115*3 + 101*4 )*2]%10 = 1946%10 =6
+
 Key = “yase”
 
 Hash Value for Table 1 = [(y*1 + a*2 + s*3 + e*4)*table_ID]%size_of_table
+                         
                          [(121*1 + 97*2 + 115*3 + 101*4 )*1]%10 = 949%10 =9
                          
 Hash Value for Table 2 = [(121*1 + 97*2 + 115*3 + 101*4 )*2]%10 = 1898%10 =8
